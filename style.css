@@ -27,23 +27,21 @@ a {
 .section-nav {
     background-color: var(--color-background);
     width: 100%;
-    max-width: 1150px;
     margin: auto;
-    position: relative;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 10;
 }
 
 .navigator {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-background);
     padding: 1% 0;
-    opacity: 0.8;
     width: 100%;
     margin: auto;
     max-width: 1150px;
-    z-index: 10;
 }
 
 .logo,
@@ -117,6 +115,7 @@ a {
 }
 
 .paragragh1 {
+    padding-bottom: 20px;
     color: var(--color-text);
     font-size: 20px;
     text-justify: center;
@@ -241,10 +240,12 @@ a {
 .trans,
 .Accounts,
 .validators {
+    position: relative;
     padding: 18px;
     background-color: var(--color-nav-button);
     width: 28%;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .img-trans,
@@ -252,8 +253,8 @@ a {
 .img-validators {
     opacity: 0.1;
     position: absolute;
-    transform: translate(175%, -80%);
-    overflow: hidden;
+    transform: translate(180%, -80%);
+
 }
 
 .section2-background {
@@ -327,16 +328,18 @@ a {
     line-height: 64px;
 }
 
-.section3{
+.section3 {
     margin: auto;
     max-width: max-content;
     width: 100%;
     max-width: 1150px;
     padding-top: 36px;
 }
-.section3 h1, p{
+
+.section3 h1,
+p {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .section3 h1 {
@@ -348,34 +351,68 @@ a {
     line-height: 64px;
 }
 
-.line{
+.lines {
+    position: relative;
+}
+
+.line1 {
+    position: absolute;
     display: flex;
     align-items: center;
-    justify-content:space-between ;
-    border:1px solid rgb(180, 223, 244);
+    border: 1px solid rgb(180, 223, 244);
     height: 1px;
+    width: 40%;
+
 
 }
-.circle1{
+
+
+.circle1 {
     background-color: #08c;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-}
-.circle2{
-    position:absolute;
-    transform: translate(500px,0);
-    background-color:#08c;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    z-index: 31;
 }
 
-.circle3{
+.line2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(180, 223, 244);
+    height: 1px;
+    width: 74%;
+    z-index: 2;
+
+}
+
+.circle2 {
+    position: absolute;
     background-color: #08c;
     border-radius: 50%;
     width: 10px;
     height: 10px;
+    left: 50%;
+}
+
+.line3 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border: 1px dashed rgb(180, 223, 244);
+    height: 1px;
+    width: 30%;
+    right: 1px;
+    z-index: 40;
+}
+
+.circle3 {
+    position: absolute;
+    background-color: #08c;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    z-index: 40;
 }
 
 .section3 p {
@@ -387,30 +424,33 @@ a {
     color: #728a96;
 }
 
-.dates{
+.dates {
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
     width: 100%;
-   
+
 }
 
-.dates div{
+.dates div {
     width: 27%;
 }
-.late2018, .year2020, .year2022{
-font-size: 24px;
-font-weight: 600px;
-line-height: 16px;
+
+.late2018,
+.year2020,
+.year2022 {
+    font-size: 24px;
+    font-weight: 600px;
+    line-height: 16px;
 }
 
-.dates a{
+.dates a {
     color: var(--color-network);
     font-size: 18px;
     padding-right: 15px;
 }
 
-.dates a:visited{
+.dates a:visited {
     color: #08c;
 }
 
